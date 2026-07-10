@@ -4,7 +4,12 @@ module.exports = {
   content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        alabaster: "#fafafa",
+        "governor-bay": "#3830a3",
+      },
+    },
   },
   plugins: [],
 }

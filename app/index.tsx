@@ -61,9 +61,9 @@ export default function Index() {
           })}
         </ScrollView>
 
-        {filteredNotes.length === 0 ? <View className="w-full items-center mt-28 justify-center">
-          <Text className="text-medium text-2xl text-gray-400" >No return found</Text>
-          <Text>Tap + to comture your fist thougth</Text>
+        {filteredNotes.length === 0 ? <View className="w-full items-center mt-16 justify-center">
+          <Text className="text-medium text-2xl text-gray-400" >No return yet</Text>
+          <Text className="text-medium text-lg text-gray-500" >Tap + to create your first thought</Text>
         </View> : <FlatList
           data={notes}
           renderItem={({ item }) => <NoteCard note={item} />}
